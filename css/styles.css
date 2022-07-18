@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 100%;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+:root{
+    --main-bg-color:hsl(217, 54%, 11%);
+    --card-bg-color:hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --eth-color: hsl(178, 100%, 50%);
+    --font-color:hsl(215, 51%, 70%);
+}
+body{
+    background-color: var(--main-bg-color);
+    color: var(--font-color);
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 1.5rem;
+}
+section{
+    background-color: var(--card-bg-color);
+    border-radius: 3%;
+    padding: 2rem 1rem;
+}
+.cubix img{
+    max-width: 100%;
+    border-radius: 3%;
+    opacity: 1;
+    transition: .5s ease-in-out;
+    z-index: 1;
+}
+.cubix img:hover{
+    opacity: 0.4;
+    z-index: -1;
+}
+.ojo{
+    height: 100%;
+    position:relative;
+    left: 50%;
+    top:-12rem;
+    width: 100%;
+    opacity: 0;}
+.ojo:hover{
+  opacity: 1;
+}
+h1{
+    color: white;
+    padding-top: -2rem;
+}
+h1 a{
+    text-decoration: none;
+    color: white;
+}
+h1 a:hover{
+    color: var(--eth-color);
+}
+div{
+    line-height: 2rem;
+    padding-top: 1rem;
+}
+.eth ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+#price{
+    color: var(--eth-color);
+}
+hr{
+    border-color: var(--font-color);
+    margin-top: 1rem;
+}
+.avatar{
+    border-radius: 25px;
+    border-style: solid;
+    height: 50px;
+    margin-top: 1rem;
+}
+#creator{
+    margin-left: 1rem;
+    position: relative;
+    top: -1rem;
+}
+#creator a{
+    color: white;
+    text-decoration: none;
+}
+#creator a:hover{
+    color: var(--eth-color);
+}
